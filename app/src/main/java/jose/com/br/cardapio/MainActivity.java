@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        startActivity(new Intent(getBaseContext(), TelaListActivity.class));
+        startActivity(new Intent(getBaseContext(), CadastroActivity.class));
 
 
     }

@@ -44,7 +44,7 @@ public class AdapterConteudo extends BaseAdapter {
 
         View view = LayoutInflater.from(ctx).inflate(R.layout.layout_lista, null);
         TextView texto = (TextView) view.findViewById(R.id.textViewConteudo);
-        texto.setText(cardapio.getConteudo());
+        texto.setText(cardapio.getTipo());
 
         return view;
     }

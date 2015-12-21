@@ -1,16 +1,23 @@
 package jose.com.br.cardapio;
 
+import java.io.Serializable;
+
 /**
  * Created by Jose Antonio on 21/12/2015.
  */
-public class Cardapio {
+public class Cardapio implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     private int id;
-    private String conteudo;
+    private String Tipo;
 
-    public Cardapio(int id, String conteudo) {
+    public Cardapio(int id, String tipo) {
         this.id = id;
-        this.conteudo = conteudo;
+        this.Tipo = tipo;
+    }
+
+    public Cardapio(String tipo) {
+        this.Tipo = tipo;
     }
 
     public int getId() {
@@ -21,11 +28,11 @@ public class Cardapio {
         this.id = id;
     }
 
-    public String getConteudo() {
-        return conteudo;
+    public String getTipo() {
+        return Tipo;
     }
 
-    public void setConteudo(String conteudo) {
-        this.conteudo = conteudo;
+    public void setTipo(String tipo) {
+        this.Tipo = tipo;
     }
 }

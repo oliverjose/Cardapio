@@ -17,6 +17,10 @@
         </activity>
         <activity android:name=".TelaListActivity" >
         </activity>
+        <activity android:name=".SubItensCardapioActivity" >
+        </activity>
+        <activity android:name=".CadastroActivity" >
+        </activity>
     </application>
 
 </manifest>
